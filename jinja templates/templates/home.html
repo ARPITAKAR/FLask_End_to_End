@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>Contents:</h3>
+<!-- Unordered List -->
+<!-- Anchor tags are used for redirection. Provide the function name used in app.py -->
+<!-- target="_blank" will open the link in a new tab -->
+<ul>
+    <li>Home</li>
+    <li><a href="{{ url_for('about') }}" target="_blank">About</a></li> <!-- Corrected anchor tag -->
+    <li><a href="{{ url_for('employees') }}" target="_blank">Employees</a></li>
+    <ul>
+        <li><a href="{{ url_for('managers') }}" target="_blank">Managers</a></li>
+    </ul>
+    <li>Careers</li>
+    <li> Contact_info</li>
+</ul>
+{% endblock content %}
