@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>Contents:ARPIT INC</h3>
+<div>
+    <p>
+        Getting Started?<a href="{{url_for('signup')}}">SignUP</a>
+        <br>
+        Already Started!!<a href="{{url_for('login')}}">Login</a>
+    </p>
+</div>
+{% endblock content %}
